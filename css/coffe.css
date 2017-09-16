@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+ 
+#font{
+    color:#daa520;
+    margin-top: 100px;
+    height:170px;
+  background-color: #fff;
+    text-align: center;
+    line-height: 2em;
+     font-size: 43px
+}
+ 
+.bb{
+    font-size: 15px;
+    color: #808080;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: -300px;
+    margin-bottom: 300px;
+    position: relative;
+    left: 450px;
+   text-indent: 2em;
+   letter-spacing:5px;
+}
+.cc{
+    
+   text-indent: 2em;
+    
+    color:#000000;
+    font-size:15px;
+    
+}
+ #mark{
+     
+     font-size:38px;
+     line-height:70px;
+      width:100%;
+       position:relative;
+      
+ }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录 . 星巴克俱乐部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
+
+<link href="css3/style1.css" rel='stylesheet' type='text/css' />
+	
+
+<style>
+	#tips{
+		position: absolute;
+		margin-left:16px ;
+		margin-top: -45px;
+		font-size:13px ;
+	}
+</style>
+</head>
+
+<body>
+
+ <!--SIGN UP-->
+
+<h1><font size="6px" style="color:white;font-family:'微软雅黑';font-weight: bolder" >登录星巴克俱乐部</font></h1>
+
+<div class="login-form">
+	<div class="close"> </div>
+		<div class="head-info">
+			<label class="lbl-1"> </label>
+			<label class="lbl-2"> </label>
+			<label class="lbl-3"> </label>
+		</div>
+			<div class="clear"> </div>
+	<div class="avtar">
+		<img src="images3/logo.png">
+	</div>
+	       <div id="form1">
+			<form name="loginForm" action="index.html" >
+					
+		<input id="username" pattern="^[a-zA-Z0-9]{6,20}$" type="text" placeholder="用户名" required autofocus>
+      <input id="password" pattern="^[a-zA-Z0-9]{6,20}$" type="password" placeholder="密码" required>
+	  
+					<div class="signin"style="margin-top:2PX ;">
+						
+						 <span id="tips"style="color: red;"></span>
+		<input type="submit" value="登录" class="signin" style="font-size:20px;cursor:pointer ;" onclick="validate()">
+		
+
+		</div>
+			
+      </form>
+       <div class="signin1" style="margin-top:3PX ;">
+		<a href="register.html"><input type="button" value="注册" style="border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size: 20px;cursor:pointer ;"></a>
+      </div>
+     
+			</div>
+	
+</div>
+<script>
+	 var username = document.getElementById("username");
+    var password = document.getElementById("password");
+     var tips = document.getElementById("tips");
+    function on_blur(element) {
+      
+       if (element.value) {
+          element.setCustomValidity("");
+        } else if (element.validity.valueMissing) {
+         
+		   tips.innerHTML="用户名或密码不能为空"
+          return false;
+        }
+
+        if (element.validity.patternMismatch) {
+          
+           tips.innerHTML="必需是字母或数字,长度6到20位"
+          return false;
+        }
+        return true;
+      
+    }
+    //验证是否能提交表单数据的方法
+    function validate(){
+			if(on_blur(username )&&on_blur(password)){
+				document.loginForm.submit();
+				//return true;
+				//location.href="success.html";
+			}else{
+				return false;
+			}
+		}
+    
+   
+        
+ 
+</script>
+
+	
+</body>
+</html>
